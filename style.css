@@ -1,0 +1,90 @@
+
+.global-message{
+    background-color: lightblue;
+    height:2rem;
+}
+body{
+margin:0;
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+.global-message>div{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+/* Nav-bar */
+.nav-bar{
+    margin-top: 10px;
+    background-color:lightblue;
+    
+
+img{
+    width: 80px;
+    height:50px;
+    align-items:center
+
+}
+.scontainer{
+    margin:auto;
+}
+
+}
+.nav-bar>div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+}
+.img1{
+    transform: translate (-100px, -50px) ;
+    display:flex;
+    justify-content:space-between;
+}
+.img2{
+    margin-right: auto;
+    margin-bottom:auto;
+   flex-direction:column;
+   transform: translate (-100px, -50px) 
+
+}
+/* Latest Posts */
+.posts{
+    background-color: lightblue;
+}
+.posts>div>h1{
+    margin-left:30px;
+}
+.posts>container{
+    margin:auto;
+}
+
+.posts>div{
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  
+}
+.i1{
+    max-width: 30px;
+}
+.i2{
+    margin-left:300px;
+    margin-top: 0px;
+   
+    max-width: auto;
+}
+.i4{
+    margin-left:300px;
+    margin-top: 0px;
+    max-width: auto;  
+}

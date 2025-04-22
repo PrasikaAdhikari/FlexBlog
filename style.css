@@ -87,21 +87,9 @@ header ul > li {
   font-size: 2rem;
   color: white;
 }
-/* .img1 {
-  transform: translate (-100px, -50px);
-  display: flex;
-  justify-content: space-between;
-}
-.img2 {
-  display: flex;
-  margin-right: auto;
-  margin-bottom: auto;
-  flex-direction: column;
-  transform: translate (-100px, -50px);
-} */
 
 /* Latest Posts */
-.posts {
+/* .posts {
   background-color: lightblue;
 }
 .posts > div > h1 {
@@ -129,4 +117,50 @@ header ul > li {
   margin-left: 300px;
   margin-top: 0px;
   max-width: auto;
+} */
+/* Latest Posts */
+
+.latest {
+  background-color: grey;
+}
+.latest > div {
+  display: flex;
+  flex-direction: column;
+}
+.latest main {
+  display: flex;
+}
+.latest .articles {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.latest .side-links {
+  width: 33%;
+  background-color: yellow;
+}
+
+.articles article {
+  display: flex;
+  gap: 10px;
+  background-color: aqua;
+  padding: 5px;
+  border-radius: 10px;
+}
+.articles article > img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+.articles article .summary {
+  background-color: white;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.articles article .summary .article-btn {
+  float: right;
 }

@@ -1,90 +1,132 @@
-
-.global-message{
-    background-color: lightblue;
-    height:2rem;
+.global-message {
+  background-color: lightblue;
+  height: 2rem;
 }
-body{
-margin:0;
+body {
+  margin: 0;
 }
-.container{
-    width:80%;
-    margin:auto;
+.container {
+  width: 80%;
+  margin: auto;
 }
-.global-message>div{
-    display:flex;
-    justify-content:space-between;
+.global-message > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
-
 
 /* Nav-bar */
-.nav-bar{
-    margin-top: 10px;
-    background-color:lightblue;
-    
-
-img{
-    width: 80px;
-    height:50px;
-    align-items:center
-
-}
-.scontainer{
-    margin:auto;
+header {
+  height: 100px;
+  background-color: darkblue;
 }
 
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
-.nav-bar>div{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+header ul {
+  display: flex;
+  gap: 15px;
+  color: white;
+}
+
+header ul > li {
+  list-style-type: none;
+  font-size: 1rem;
 }
 
 /* Hero Section */
-.hero{
-    display:flex;
+.hero {
+  display: flex;
+  background-color: aqua;
+  height: 500px;
+  background-image: url("./assets/hero.jpg");
+  background-position: center;
+  background-size: cover;
 }
-.img1{
-    transform: translate (-100px, -50px) ;
-    display:flex;
-    justify-content:space-between;
-}
-.img2{
-    margin-right: auto;
-    margin-bottom:auto;
-   flex-direction:column;
-   transform: translate (-100px, -50px) 
 
+.hero > div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
+/* .hero .hero-item{}  Can select like this*/
+.hero .hero-item {
+  height: 300px;
+  background-color: rgba(128, 128, 128, 0.564);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px rgba(255, 255, 255, 0.227) solid;
+}
+.hero .hero-item > hr {
+  width: 100%;
+}
+.hero .hero-item .hero-title {
+  font-size: 3rem;
+  color: white;
+}
+.hero .hero-item .hero-description {
+  font-size: 2rem;
+  color: white;
+}
+/* .img1 {
+  transform: translate (-100px, -50px);
+  display: flex;
+  justify-content: space-between;
+}
+.img2 {
+  display: flex;
+  margin-right: auto;
+  margin-bottom: auto;
+  flex-direction: column;
+  transform: translate (-100px, -50px);
+} */
+
 /* Latest Posts */
-.posts{
-    background-color: lightblue;
+.posts {
+  background-color: lightblue;
 }
-.posts>div>h1{
-    margin-left:30px;
+.posts > div > h1 {
+  margin-left: 30px;
 }
-.posts>container{
-    margin:auto;
+.posts > container {
+  margin: auto;
 }
 
-.posts>div{
-    
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  
-  
+.posts > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.i1{
-    max-width: 30px;
+.i1 {
+  max-width: 30px;
 }
-.i2{
-    margin-left:300px;
-    margin-top: 0px;
-   
-    max-width: auto;
+.i2 {
+  margin-left: 300px;
+  margin-top: 0px;
+
+  max-width: auto;
 }
-.i4{
-    margin-left:300px;
-    margin-top: 0px;
-    max-width: auto;  
+.i4 {
+  margin-left: 300px;
+  margin-top: 0px;
+  max-width: auto;
 }

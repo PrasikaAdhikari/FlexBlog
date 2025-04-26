@@ -54,6 +54,8 @@ header ul > li {
   background-image: url("./assets/hero.jpg");
   background-position: center;
   background-size: cover;
+
+  background-attachment: fixed;
 }
 
 .hero > div {
@@ -121,46 +123,158 @@ header ul > li {
 /* Latest Posts */
 
 .latest {
-  background-color: grey;
+  background-color: #7fb1b6;
+  align-items: flex-start;
+}
+
+.latest .title {
+  padding: 15px;
+  font-size: 1.5rem;
+  margin-left: 10px;
 }
 .latest > div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .latest main {
-  display: flex;
+  display: column;
 }
+
 .latest .articles {
   width: 66%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
   padding: 10px;
+  background-color: #d6e5e8;
+  border-radius: 25px;
 }
 
-.latest .side-links {
-  width: 33%;
-  background-color: yellow;
+.latest .article-btn {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  margin-left: 80%;
+
+  align-items: center;
+  background-color: #c25329;
+  color: white;
+  border-radius: 10px;
+  border-color: c25329;
 }
 
 .articles article {
   display: flex;
   gap: 10px;
-  background-color: aqua;
+
   padding: 5px;
   border-radius: 10px;
 }
 .articles article > img {
   width: 100px;
-  height: auto;
-  object-fit: contain;
+  height: 50%;
+  background-size: cover;
+  display: block;
+  margin-top: 50px;
 }
 .articles article .summary {
-  background-color: white;
   display: flex;
   gap: 5px;
   flex-direction: column;
 }
 .articles article .summary .article-btn {
   float: right;
+}
+.latest .side-links {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(103, 26%, 65%);
+  border-radius: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 10%;
+  padding: 20px;
+  margin-left: 80%;
+}
+
+/* Recommendation Destination */
+
+.recommendation .container .c {
+  display: flex;
+  flex-wrap: wrap; /* allow cards to wrap */
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.card-image {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 5px 4px 9px 3px rgba(47, 46, 46, 0.286);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-date {
+  display: flex;
+  text-align: center;
+  margin-left: 25%;
+}
+/* .btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  padding: 10px;
+} */
+
+.btn {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  background-color: #c25329;
+  color: white;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.summary {
+  text-align: center;
+}
+
+/* Subscribe */
+
+.subscribe {
+  background-color: #71a3c1;
+  padding: 20px;
+}
+.title {
+  margin-left: 30%;
+}
+.subs {
+  background-color: white;
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 30%;
+  flex-direction: column;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
 }

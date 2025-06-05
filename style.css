@@ -8,6 +8,8 @@ body {
 .container {
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 .global-message > div {
   display: flex;
@@ -121,7 +123,10 @@ header ul > li {
   max-width: auto;
 } */
 /* Latest Posts */
-
+.main {
+  display: flex;
+  flex-direction: column;
+}
 .latest {
   background-color: #7fb1b6;
   align-items: flex-start;
@@ -132,22 +137,42 @@ header ul > li {
   font-size: 1.5rem;
   margin-left: 10px;
 }
-.latest > div {
-  display: flex;
-  flex-direction: row;
-}
-.latest main {
-  display: column;
-}
 
-.latest .articles {
-  width: 66%;
+.articles {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  padding: 10px;
+  flex-direction: column;
+  width: 70%;
+  padding: 20px;
   background-color: #d6e5e8;
   border-radius: 25px;
+  gap: 20px; /* Space between articles */
+}
+
+.articles article {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.articles article:hover {
+  transform: translateY(-5px);
+}
+
+.articles article > img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.articles article .summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .latest .article-btn {
@@ -163,36 +188,16 @@ header ul > li {
   border-color: c25329;
 }
 
-.articles article {
-  display: flex;
-  gap: 10px;
-
-  padding: 5px;
-  border-radius: 10px;
-}
-.articles article > img {
-  width: 100px;
-  height: 50%;
-  background-size: cover;
-  display: block;
-  margin-top: 50px;
-}
-.articles article .summary {
-  display: flex;
-  gap: 5px;
-  flex-direction: column;
-}
 .articles article .summary .article-btn {
   float: right;
 }
 .latest .side-links {
   display: flex;
-  flex-direction: column;
   background-color: hsl(103, 26%, 65%);
   border-radius: 20px;
   align-items: center;
   flex-wrap: wrap;
-  width: 10%;
+  width: 20%;
   padding: 20px;
   margin-left: 80%;
 }
@@ -231,12 +236,6 @@ header ul > li {
   text-align: center;
   margin-left: 25%;
 }
-/* .btn {
-  display: flex;
-  justify-content: flex-end;
-  width: 80%;
-  padding: 10px;
-} */
 
 .btn {
   width: 70%;

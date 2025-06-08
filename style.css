@@ -5,17 +5,16 @@
 body {
   margin: 0;
 }
-.container {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
+.hero .container {
+  align-items: center;
 }
 .global-message > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-right: 10px;
 }
 
 /* Nav-bar */
@@ -56,7 +55,8 @@ header ul > li {
   background-image: url("./assets/hero.jpg");
   background-position: center;
   background-size: cover;
-
+  align-items: center;
+  justify-content: center;
   background-attachment: fixed;
 }
 
@@ -123,13 +123,16 @@ header ul > li {
   max-width: auto;
 } */
 /* Latest Posts */
-.main {
+main {
   display: flex;
-  flex-direction: column;
+  padding: 20px;
+  flex-direction: row;
+  width: 100%;
+  gap: 2%;
 }
+
 .latest {
   background-color: #7fb1b6;
-  align-items: flex-start;
 }
 
 .latest .title {
@@ -169,18 +172,11 @@ header ul > li {
   border-radius: 10px;
 }
 
-.articles article .summary {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .latest .article-btn {
   width: 10%;
   display: flex;
   justify-content: center;
   margin-left: 80%;
-
   align-items: center;
   background-color: #c25329;
   color: white;
@@ -191,15 +187,16 @@ header ul > li {
 .articles article .summary .article-btn {
   float: right;
 }
-.latest .side-links {
+.side-links {
   display: flex;
+  flex-direction: column;
   background-color: hsl(103, 26%, 65%);
   border-radius: 20px;
   align-items: center;
   flex-wrap: wrap;
   width: 20%;
   padding: 20px;
-  margin-left: 80%;
+  height: 20%;
 }
 
 /* Recommendation Destination */

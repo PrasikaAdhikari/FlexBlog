@@ -128,7 +128,7 @@ main {
   padding: 20px;
   flex-direction: row;
   width: 100%;
-  gap: 2%;
+  gap: 1%;
 }
 
 .latest {
@@ -209,7 +209,15 @@ main {
   align-items: flex-start;
   margin-top: 20px;
 }
+.recommendation .container h2 {
+  display: flex;
+  flex-wrap: wrap; /* allow cards to wrap */
 
+  gap: 20px;
+  padding: 10px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
 .card-image {
   width: 100%;
   display: flex;
